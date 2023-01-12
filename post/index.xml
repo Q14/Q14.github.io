@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://Q14.github.io/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language><atom:link href="https://Q14.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Q14.github.io/post/github-pages-&#43;-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Q14.github.io/post/github-pages-&#43;-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>Github Pages + Hugo 搭建个人博客 想快速搭建一个人博客，又不想搞服务器以及域名因此白嫖一下 Github Pages
+0、主要步骤 安装Hugo 使用Hugo 生成 网站代码， 把生成的网站代码上传到 github上 一、安装 Hugo 和 Git 本次安装以及调试是在Mac电脑，本地安装使用 home brew 不了解的可以查看下 home brew 官网
+Home brew 官网安装
+Hugo 官方介绍文档
+bres install hugo ➜ ~ brew install hugo #因为已经安装过，就贴一个安装过的截图了 Running `brew update --auto-update`... Warning: hugo 0.101.0 is already installed and up-to-date. To reinstall 0.101.0, run: brew reinstall hugo 二、Hugo 创建项目 创建 GoldPillar 项目 # GoldPillar 是网站文件夹名 ~ hugo new site GoldPillar # 创建成功后提示 Congratulations!</description>
+    </item>
+    
+  </channel>
+</rss>

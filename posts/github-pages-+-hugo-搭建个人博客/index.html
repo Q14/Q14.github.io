@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Github Pages &#43; Hugo 搭建个人博客 - My New Hugo Site</title><meta name="Description" content="Hugo theme - LoveIt"><meta property="og:title" content="Github Pages &#43; Hugo 搭建个人博客" />
+<meta property="og:description" content="Github Pages &#43; Hugo 搭建个人博客 想快速搭建一个人博客，又不想搞服务器以及域名因此白嫖一下 Github Pages
+0、主要步骤 安装Hugo 使用Hugo 生成 网站代码， 把生成的网站代码上传到 github上 一、安装 Hugo 和 Git 本次安装以及调试是在Mac电脑，本地安装使用 home brew 不了解的可以查看下 home brew 官网
+Home brew 官网安装
+Hugo 官方介绍文档
+bres install hugo ➜ ~ brew install hugo #因为已经安装过，就贴一个安装过的截图了 Running `brew update --auto-update`... Warning: hugo 0.101.0 is already installed and up-to-date. To reinstall 0.101.0, run: brew reinstall hugo 二、Hugo 创建项目 创建 GoldPillar 项目 # GoldPillar 是网站文件夹名 ~ hugo new site GoldPillar # 创建成功后提示 Congratulations!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Q14.github.io/posts/github-pages-&#43;-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" /><meta property="og:image" content="https://Q14.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-12T16:25:51+08:00" />
+<meta property="article:modified_time" content="2023-01-12T16:25:51+08:00" /><meta property="og:site_name" content="LoveIt" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://Q14.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Github Pages &#43; Hugo 搭建个人博客"/>
+<meta name="twitter:description" content="Github Pages &#43; Hugo 搭建个人博客 想快速搭建一个人博客，又不想搞服务器以及域名因此白嫖一下 Github Pages
+0、主要步骤 安装Hugo 使用Hugo 生成 网站代码， 把生成的网站代码上传到 github上 一、安装 Hugo 和 Git 本次安装以及调试是在Mac电脑，本地安装使用 home brew 不了解的可以查看下 home brew 官网
+Home brew 官网安装
+Hugo 官方介绍文档
+bres install hugo ➜ ~ brew install hugo #因为已经安装过，就贴一个安装过的截图了 Running `brew update --auto-update`... Warning: hugo 0.101.0 is already installed and up-to-date. To reinstall 0.101.0, run: brew reinstall hugo 二、Hugo 创建项目 创建 GoldPillar 项目 # GoldPillar 是网站文件夹名 ~ hugo new site GoldPillar # 创建成功后提示 Congratulations!"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://Q14.github.io/posts/github-pages-&#43;-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Github Pages + Hugo 搭建个人博客",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/Q14.github.io\/posts\/github-pages-\u002b-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2\/"
+        },"image": ["https:\/\/Q14.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  274 ,
+        "url": "https:\/\/Q14.github.io\/posts\/github-pages-\u002b-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2\/","datePublished": "2023-01-12T16:25:51+08:00","dateModified": "2023-01-12T16:25:51+08:00","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/Q14.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My New Hugo Site"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>LoveIt</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My New Hugo Site"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>LoveIt</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Github Pages + Hugo 搭建个人博客</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-12">2023-01-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;274 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;<span id="/posts/github-pages-&#43;-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="leancloud_visitors" data-flag-title="Github Pages &#43; Hugo 搭建个人博客">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#一安装-hugo-和-git">一、安装 Hugo 和 Git</a></li>
+      </ul>
+    </li>
+    <li><a href="#二hugo-创建项目">二、Hugo 创建项目</a></li>
+    <li><a href="#三hugo-创建blog">三、Hugo 创建Blog</a></li>
+    <li><a href="#四生成html代码部署到github">四、生成<code>html</code>代码&amp;部署到<code>Github</code></a>
+      <ul>
+        <li><a href="#在public-目录下git-init">在public 目录下git init</a></li>
+        <li><a href="#github-上创建仓库-如下">github 上创建仓库 如下</a></li>
+        <li><a href="#public-代码退到远程github-仓库上">public 代码退到远程github 仓库上</a></li>
+      </ul>
+    </li>
+    <li><a href="#五成功创建-httpsq14githubio-打开看看吧">五、成功创建 <a href="https://q14.github.io/">https://q14.github.io/</a> 打开看看吧</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="github-pages--hugo-搭建个人博客">Github Pages + Hugo 搭建个人博客</h1>
+<p>想快速搭建一个人博客，又不想搞服务器以及域名因此白嫖一下 Github Pages</p>
+<h1 id="0主要步骤">0、主要步骤</h1>
+<ol>
+<li>安装Hugo</li>
+<li>使用Hugo 生成 网站代码，</li>
+<li>把生成的网站代码上传到 github上</li>
+</ol>
+<h3 id="一安装-hugo-和-git">一、安装 Hugo 和 Git</h3>
+<p>本次安装以及调试是在Mac电脑，本地安装使用 <code>home brew</code> 不了解的可以查看下 <code>home brew</code> 官网</p>
+<p><a href="https://brew.sh/" target="_blank" rel="noopener noreffer ">Home brew 官网安装</a></p>
+<p><a href="https://gohugo.io/getting-started/quick-start/" target="_blank" rel="noopener noreffer ">Hugo 官方介绍文档</a></p>
+<h4 id="bres-install-hugo">bres install hugo</h4>
+<pre tabindex="0"><code>➜  ~ brew install hugo #因为已经安装过，就贴一个安装过的截图了
+
+Running `brew update --auto-update`...
+Warning: hugo 0.101.0 is already installed and up-to-date.
+To reinstall 0.101.0, run:
+  brew reinstall hugo
+</code></pre><h2 id="二hugo-创建项目">二、Hugo 创建项目</h2>
+<ol>
+<li>创建 GoldPillar 项目</li>
+</ol>
+<pre tabindex="0"><code># GoldPillar 是网站文件夹名 
+ ~ hugo new site GoldPillar
+
+# 创建成功后提示
+Congratulations! Your new Hugo site is created in /Users/Max/Desktop/GoldPillar.
+
+Just a few more steps and you&#39;re ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/ or
+   create your own with the &#34;hugo new theme &lt;THEMENAME&gt;&#34; command.
+2. Perhaps you want to add some content. You can add single files
+   with &#34;hugo new &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;&#34;.
+3. Start the built-in live server via &#34;hugo server&#34;.
+
+Visit https://gohugo.io/ for quickstart guide and full documentation.
+</code></pre><p>项目目录如下</p>
+<pre tabindex="0"><code>.
+├── archetypes
+│   └── default.md
+├── config.toml
+├── content
+├── data
+├── layouts
+├── public
+├── static
+└── themes
+
+7 directories, 2 files
+</code></pre><p>选择主题</p>
+<p>有需要的可以去主题挑选一款自己喜欢的<a href="https://themes.gohugo.io" target="_blank" rel="noopener noreffer ">Hugo Themes</a></p>
+<pre tabindex="0"><code>cd GoldPillar/themes
+git clone https://github.com/dillonzq/LoveIt.git
+</code></pre><p>添加主题到 <code>config.toml</code></p>
+<pre tabindex="0"><code>echo &#34;theme = &#39;LoveIt&#39;&#34; &gt;&gt; config.toml
+</code></pre><p>toml内容如下</p>
+<pre tabindex="0"><code>baseURL = &#39;https://Q14.github.io&#39;
+languageCode = &#39;zh-CN&#39;
+title = &#39;Goldpillar joe 的博客&#39;
+theme = &#39;LoveIt&#39;
+</code></pre><h2 id="三hugo-创建blog">三、Hugo 创建Blog</h2>
+<pre tabindex="0"><code>hugo new post/first.md
+</code></pre><p><code>GoldPillar/content/post</code>/  目录下是你创建的blog</p>
+<h2 id="四生成html代码部署到github">四、生成<code>html</code>代码&amp;部署到<code>Github</code></h2>
+<pre tabindex="0"><code>hugo
+cd public 
+# public 目录如下
+├── categories
+│   └── index.xml
+├── index.xml
+├── sitemap.xml
+└── tags
+    └── index.xml
+2 directories, 4 files
+</code></pre><h3 id="在public-目录下git-init">在public 目录下git init</h3>
+<h3 id="github-上创建仓库-如下">github 上创建仓库 如下</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/NewReponse.png"
+        data-srcset="/img/NewReponse.png, /img/NewReponse.png 1.5x, /img/NewReponse.png 2x"
+        data-sizes="auto"
+        alt="/img/NewReponse.png"
+        title="/img/NewReponse.png" /></p>
+<p>创建<code>github</code> 同名<code>userName.github.io</code></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/createres.png"
+        data-srcset="/img/createres.png, /img/createres.png 1.5x, /img/createres.png 2x"
+        data-sizes="auto"
+        alt="/img/createres.png"
+        title="/img/createres.png" /></p>
+<h3 id="public-代码退到远程github-仓库上">public 代码退到远程github 仓库上</h3>
+<pre tabindex="0"><code>git init 
+git add .
+git commit -m &#39;crate Q14 github.io site&#39;
+git remote add origin git@github.com:Q14/q14.github.io.git
+git push -uf origin main
+</code></pre><h2 id="五成功创建-httpsq14githubio-打开看看吧">五、成功创建 <a href="https://q14.github.io/" target="_blank" rel="noopener noreffer ">https://q14.github.io/</a> 打开看看吧</h2>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-01-12</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://Q14.github.io/posts/github-pages-&#43;-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-title="Github Pages &#43; Hugo 搭建个人博客"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://Q14.github.io/posts/github-pages-&#43;-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://Q14.github.io/posts/github-pages-&#43;-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-title="Github Pages &#43; Hugo 搭建个人博客"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://Q14.github.io/posts/github-pages-&#43;-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-title="Github Pages &#43; Hugo 搭建个人博客"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://Q14.github.io/posts/github-pages-&#43;-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-title="Github Pages &#43; Hugo 搭建个人博客"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"en","pageSize":10,"placeholder":"Your comment ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"","algoliaIndex":"","algoliaSearchKey":"","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
